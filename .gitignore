@@ -1,0 +1,7 @@
+
+app_build/__pycache__
+routers/__pycache__
+.env
+db_alembic/__pycache__
+fvenv
+DDL Internals — Alembic 1.20.0 documentation.pdf
