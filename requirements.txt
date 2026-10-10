@@ -83,6 +83,7 @@ googleapis-common-protos==1.75.0
 graphql-core==3.2.8
 greenlet==3.5.0
 grpcio==1.78.0
+gunicorn==26.2.0
 h11==0.16.0
 h2==4.3.0
 h5py==3.14.0
