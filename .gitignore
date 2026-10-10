@@ -1,6 +1,6 @@
 
 app_build/__pycache__
-routers/__pycache__
+app_build/routers/__pycache__
 .env
 db_alembic/__pycache__
 fvenv
