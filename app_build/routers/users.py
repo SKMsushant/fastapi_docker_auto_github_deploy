@@ -3,7 +3,7 @@ from fastapi.params import Body
 from pydantic import BaseModel,EmailStr
 from typing import Optional,List
 import random
-import pyodbc
+
 from datetime import datetime
 import time
 

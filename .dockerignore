@@ -1,0 +1,7 @@
+fvenv
+app_build/__pycache__
+db_alembic/__pycache__
+.git/
+.gitignore
+.env
+.github
