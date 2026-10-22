@@ -2,7 +2,7 @@ services:
 #database service container saving data to local
   db:
     image: postgres:16-alpine
-    container_name: fastapi_postgres_data
+    container_name: fastapi_postgres_data_1
     restart: always
     environment:
       POSTGRES_USER: ${DB_USERNAME:-postgres}
@@ -21,7 +21,7 @@ services:
 #webapp service container to host the web app
   web:
     build: .
-    container_name: fastapi_app
+    container_name: fastapi_app_1
     restart: always
     depends_on:
       db:
@@ -39,7 +39,7 @@ services:
              gunicorn -w 2 -k uvicorn.workers.UvicornWorker app_build.main:app --bind 0.0.0.0:8000"
   nginx:
     image: nginx:1.27-alpine
-    container_name: fastapi_nginx
+    container_name: fastapi_nginx_1
     restart: always
     ports:
       - "80:80"
